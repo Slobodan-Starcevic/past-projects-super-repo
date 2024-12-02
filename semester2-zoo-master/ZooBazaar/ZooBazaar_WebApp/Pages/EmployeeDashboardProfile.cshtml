@@ -1,0 +1,83 @@
+﻿@page
+@model WebApp.Pages.EmployeeDashboardProfileModel
+@{
+    Layout = "~/pages/shared/_layoutdashboard.cshtml";
+    string? pfpUrl = User.Claims.FirstOrDefault(c => c.Type == "PfpURL")?.Value;
+}
+
+<div class="container1">
+    <div class="content red-bg-light">
+        <div class="submit-form">
+            <form id="delete-form2" method="post" asp-page-handler="Post">
+                <div class="form-controls form-controls-extra">
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.FirstName" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.FirstName"></span>
+                        <input asp-for="UserProfile.FirstName" class="form-control" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.BirthDate" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.BirthDate"></span>
+                        <input asp-for="UserProfile.BirthDate" class="form-control" disabled />
+                        <input type="hidden" asp-for="UserProfile.BirthDate" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.LastName" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.LastName"></span>
+                        <input asp-for="UserProfile.LastName" class="form-control" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.IBAN" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.IBAN"></span>
+                        <input asp-for="UserProfile.IBAN" class="form-control" disabled/>
+                        <input type="hidden" asp-for="UserProfile.IBAN" />
+                    </div>
+
+                    
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.PersonalEmail" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.PersonalEmail"></span>
+                        <input asp-for="UserProfile.PersonalEmail" class="form-control" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.WorkEmail" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.WorkEmail"></span>
+                        <input asp-for="UserProfile.WorkEmail" class="form-control" disabled />
+                        <input type="hidden" asp-for="UserProfile.WorkEmail" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.PostalCode" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.PostalCode"></span>
+                        <input asp-for="UserProfile.PostalCode" class="form-control" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.SSN" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.SSN"></span>
+                        <input asp-for="UserProfile.SSN" class="form-control" disabled />
+                        <input type="hidden" asp-for="UserProfile.SSN" />
+                    </div>
+
+                    <div class="profile-forms">
+                        <label asp-for="UserProfile.Gender" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="UserProfile.Gender"></span>
+                        <select asp-for="UserProfile.Gender" class="form-control">
+                            <option value="MALE">Male</option>
+                            <option value="FEMALE">Female</option>
+                            <option value="OTHER">Other</option>
+                            <option value="RATHER_NOT_SAY">Rather not say</option>
+                        </select>
+                    </div>
+                    <div class="form-btn form-btn-extra">
+                        <button class="btn btn-primary" onclick="return confirmProfileChange()">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

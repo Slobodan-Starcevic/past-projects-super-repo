@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ZooBazaar_WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ZooBazaar_WebApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+</head>
+<body>
+    <header class="hor-header">
+        <nav class="hor-nav red-bg">
+            <div class="hor-nav-images">
+                <div class="hor-nav-logo blue-bg">
+                    <a href="/">
+                        <img src="~/media/ZOO-BAZAAR.png" />
+                    </a>
+                </div>
+                <div class="hor-nav-ocean green-bg">
+                    <img src="~/media/ocean-logo.png" />
+                </div>
+                <div class="hor-nav-jungle yellow-bg">
+                    <img src="~/media/jungle-logo.png" />
+                </div>
+                <div class="hor-nav-desert orange-bg">
+                    <img src="~/media/desert-logo.png" />
+                </div>
+                <div class="hor-nav-savanna ">
+                    <img src="~/media/savanna-logo.png" />
+                </div>
+            </div>
+            <div class="hor-nav-items">
+                <div class="nav-item">
+                    <a href="/information">Zoo information</a>
+                </div>
+                <div class="menu">
+                    <button onclick="dropDown()" class="dropdown-btn">&#9776; Menu</button>
+                    <div id="dropdown" class="dropdown-content">
+                        <a href="/">Home</a>
+                        <a href="/parkrules">Park rules</a>
+                        <a href="/privacy">Privacy policy</a>
+                        <a href="/termsofservice">Terms of service</a>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a href="/EmployeeDashboardProfile">Employee environment</a>
+                            <a href="/Logout">Logout</a>
+                        }
+                        else
+                        {
+                            <a href="/Login">Login</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+    <footer>
+        <div class="footer-container">
+            <div class="footer-images red-bg">
+                <div class="footer-blue-block blue-bg">
+                </div>
+                <div class="footer-ocean green-bg">
+                    <img src="~/media/ocean-logo.png" />
+                </div>
+                <div class="footer-jungle yellow-bg">
+                    <img src="~/media/jungle-logo.png" />
+                </div>
+                <div class="footer-desert orange-bg">
+                    <img src="~/media/desert-logo.png" />
+                </div>
+                <div class="footer-savanna ">
+                    <img src="~/media/savanna-logo.png" />
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="~/media/zoo-bazaar.png" />
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/information">Zoo information</a></li>
+                    <li><a href="/parkrules">Park rules</a></li>
+                    <li><a href="/privacy">Privacy policy</a></li>
+                    <li><a href="/termsofservice">Terms of service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

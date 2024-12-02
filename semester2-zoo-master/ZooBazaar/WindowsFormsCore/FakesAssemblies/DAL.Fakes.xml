@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.Fakes.ShimBaseRepository">
+            <summary>Shim type of DAL.BaseRepository</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimBaseRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimBaseRepository.#ctor(DAL.BaseRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Fakes.ShimBaseRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.CloseConnection">
+            <summary>Sets the Shim of BaseRepository.CloseConnection(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.ConnectionStringGet">
+            <summary>Sets the Shim of BaseRepository.get_ConnectionString(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.CreateAndOpenSql">
+            <summary>Sets the Shim of BaseRepository.CreateAndOpenSql(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.DeleteToDatabaseString">
+            <summary>Sets the Shim of BaseRepository.DeleteToDatabase(BaseRepository this, String query)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.DeleteToDatabaseStringSqlParameterArray">
+            <summary>Sets the Shim of BaseRepository.DeleteToDatabase(BaseRepository this, String query, SqlParameter[] parameters)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.OpenConnectionString">
+            <summary>Sets the Shim of BaseRepository.OpenConnection(BaseRepository this, String query)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.UpdateInDatabaseSqlCommand">
+            <summary>Sets the Shim of BaseRepository.UpdateInDatabase(BaseRepository this, SqlCommand command)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.AllInstances.WriteToDatabaseSqlCommand">
+            <summary>Sets the Shim of BaseRepository.WriteToDatabase(BaseRepository this, SqlCommand command)</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimBaseRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimBaseRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.CloseConnection">
+            <summary>Sets the Shim of BaseRepository.CloseConnection(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.ConnectionStringGet">
+            <summary>Sets the Shim of BaseRepository.get_ConnectionString(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.Constructor">
+            <summary>Sets the Shim of BaseRepository.BaseRepository(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.CreateAndOpenSql">
+            <summary>Sets the Shim of BaseRepository.CreateAndOpenSql(BaseRepository this)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.DeleteToDatabaseString">
+            <summary>Sets the Shim of BaseRepository.DeleteToDatabase(BaseRepository this, String query)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.DeleteToDatabaseStringSqlParameterArray">
+            <summary>Sets the Shim of BaseRepository.DeleteToDatabase(BaseRepository this, String query, SqlParameter[] parameters)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.OpenConnectionString">
+            <summary>Sets the Shim of BaseRepository.OpenConnection(BaseRepository this, String query)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.UpdateInDatabaseSqlCommand">
+            <summary>Sets the Shim of BaseRepository.UpdateInDatabase(BaseRepository this, SqlCommand command)</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimBaseRepository.WriteToDatabaseSqlCommand">
+            <summary>Sets the Shim of BaseRepository.WriteToDatabase(BaseRepository this, SqlCommand command)</summary>
+        </member>
+        <member name="T:DAL.Fakes.ShimProgramConfig">
+            <summary>Shim type of DAL.ProgramConfig</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimProgramConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimProgramConfig.#ctor(DAL.ProgramConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Fakes.ShimProgramConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimProgramConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Fakes.ShimProgramConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimProgramConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Fakes.ShimProgramConfig.Constructor">
+            <summary>Sets the Shim of ProgramConfig.ProgramConfig(ProgramConfig this)</summary>
+        </member>
+        <member name="T:DAL.Fakes.StubBaseRepository">
+            <summary>Stub type of DAL.BaseRepository</summary>
+        </member>
+        <member name="M:DAL.Fakes.StubBaseRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubBaseRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Fakes.StubBaseRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseRepository</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubBaseRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubBaseRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Fakes.StubProgramConfig">
+            <summary>Stub type of DAL.ProgramConfig</summary>
+        </member>
+        <member name="M:DAL.Fakes.StubProgramConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubProgramConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Fakes.StubProgramConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubProgramConfig</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubProgramConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Fakes.StubProgramConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimAnimalRepository">
+            <summary>Shim type of DAL.Repositories.AnimalRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimAnimalRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimAnimalRepository.#ctor(DAL.Repositories.AnimalRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.BLLInterfacesRepositoriesIAnimalRepositoryGetAnimalsByEnclosureGuidGuid">
+            <summary>Sets the Shim of AnimalRepository.BLL.Interfaces.Repositories.IAnimalRepository.GetAnimalsByEnclosure(AnimalRepository this, Guid id, Guid enclosureId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.BLLInterfacesRepositoriesIAnimalRepositoryGetAnimalsFromTaskGuid">
+            <summary>Sets the Shim of AnimalRepository.BLL.Interfaces.Repositories.IAnimalRepository.GetAnimalsFromTask(AnimalRepository this, Guid task_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.CreateAnimalAnimal">
+            <summary>Sets the Shim of AnimalRepository.CreateAnimal(AnimalRepository this, Animal animal)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.DeleteAnimalGuid">
+            <summary>Sets the Shim of AnimalRepository.DeleteAnimal(AnimalRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EdditAnimalArivalDateGuidDateOnly">
+            <summary>Sets the Shim of AnimalRepository.EdditAnimalArivalDate(AnimalRepository this, Guid animalId, DateOnly dateOnly)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EdditAnimalLeaveDGuidDateOnly">
+            <summary>Sets the Shim of AnimalRepository.EdditAnimalLeaveD(AnimalRepository this, Guid animalId, DateOnly dateOnly)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EdditShowStatusGuidBoolean">
+            <summary>Sets the Shim of AnimalRepository.EdditShowStatus(AnimalRepository this, Guid Animal_id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalBirthdateGuidDateTime">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalBirthdate(AnimalRepository this, Guid id, DateTime birthdate)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalNameGuidString">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalName(AnimalRepository this, Guid id, String name)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalSexGuidSex">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSex(AnimalRepository this, Guid id, Sex sex)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalSizeGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSize(AnimalRepository this, Guid id, Int32 size)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalSpeedGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSpeed(AnimalRepository this, Guid id, Int32 speed)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.EditAnimalWeightGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalWeight(AnimalRepository this, Guid id, Int32 weight)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.GetAllAnimalNamesBySpeciesIdString">
+            <summary>Sets the Shim of AnimalRepository.GetAllAnimalNamesBySpeciesId(AnimalRepository this, String speciesId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.GetAllAnimalsBySpeciesGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAllAnimalsBySpecies(AnimalRepository this, Guid speciesId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.GetAnimalGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAnimal(AnimalRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.GetAnimals">
+            <summary>Sets the Shim of AnimalRepository.GetAnimals(AnimalRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.AllInstances.GetAnimalsFromTaskGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAnimalsFromTask(AnimalRepository this, Guid task_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.BLLInterfacesRepositoriesIAnimalRepositoryGetAnimalsByEnclosureGuidGuid">
+            <summary>Sets the Shim of AnimalRepository.BLL.Interfaces.Repositories.IAnimalRepository.GetAnimalsByEnclosure(AnimalRepository this, Guid id, Guid enclosureId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.BLLInterfacesRepositoriesIAnimalRepositoryGetAnimalsFromTaskGuid">
+            <summary>Sets the Shim of AnimalRepository.BLL.Interfaces.Repositories.IAnimalRepository.GetAnimalsFromTask(AnimalRepository this, Guid task_id)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimAnimalRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimAnimalRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimAnimalRepository.Bind(BLL.Interfaces.Repositories.IAnimalRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.Constructor">
+            <summary>Sets the Shim of AnimalRepository.AnimalRepository(AnimalRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.CreateAnimalAnimal">
+            <summary>Sets the Shim of AnimalRepository.CreateAnimal(AnimalRepository this, Animal animal)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.DeleteAnimalGuid">
+            <summary>Sets the Shim of AnimalRepository.DeleteAnimal(AnimalRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EdditAnimalArivalDateGuidDateOnly">
+            <summary>Sets the Shim of AnimalRepository.EdditAnimalArivalDate(AnimalRepository this, Guid animalId, DateOnly dateOnly)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EdditAnimalLeaveDGuidDateOnly">
+            <summary>Sets the Shim of AnimalRepository.EdditAnimalLeaveD(AnimalRepository this, Guid animalId, DateOnly dateOnly)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EdditShowStatusGuidBoolean">
+            <summary>Sets the Shim of AnimalRepository.EdditShowStatus(AnimalRepository this, Guid Animal_id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalBirthdateGuidDateTime">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalBirthdate(AnimalRepository this, Guid id, DateTime birthdate)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalNameGuidString">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalName(AnimalRepository this, Guid id, String name)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalSexGuidSex">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSex(AnimalRepository this, Guid id, Sex sex)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalSizeGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSize(AnimalRepository this, Guid id, Int32 size)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalSpeedGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalSpeed(AnimalRepository this, Guid id, Int32 speed)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.EditAnimalWeightGuidInt32">
+            <summary>Sets the Shim of AnimalRepository.EditAnimalWeight(AnimalRepository this, Guid id, Int32 weight)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.GetAllAnimalNamesBySpeciesIdString">
+            <summary>Sets the Shim of AnimalRepository.GetAllAnimalNamesBySpeciesId(AnimalRepository this, String speciesId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.GetAllAnimalsBySpeciesGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAllAnimalsBySpecies(AnimalRepository this, Guid speciesId)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.GetAnimalGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAnimal(AnimalRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.GetAnimals">
+            <summary>Sets the Shim of AnimalRepository.GetAnimals(AnimalRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimAnimalRepository.GetAnimalsFromTaskGuid">
+            <summary>Sets the Shim of AnimalRepository.GetAnimalsFromTask(AnimalRepository this, Guid task_id)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimContentRepository">
+            <summary>Shim type of DAL.Repositories.ContentRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimContentRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimContentRepository.#ctor(DAL.Repositories.ContentRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimContentRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.CreateAnimalContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateAnimalContent(ContentRepository this, Content content, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.CreateContentContent">
+            <summary>Sets the Shim of ContentRepository.CreateContent(ContentRepository this, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.CreateEnclosureContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateEnclosureContent(ContentRepository this, Content content, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.CreateSpeciesContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateSpeciesContent(ContentRepository this, Content content, Guid species_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.DeleteContentGuid">
+            <summary>Sets the Shim of ContentRepository.DeleteContent(ContentRepository this, Guid content_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.EdditContentOrderGuidWebContentOrder">
+            <summary>Sets the Shim of ContentRepository.EdditContentOrder(ContentRepository this, Guid contentId, WebContentOrder wCO)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.GetAnimalContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetAnimalContents(ContentRepository this, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.GetEnclosureContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetEnclosureContents(ContentRepository this, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.GetSpeciesContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetSpeciesContents(ContentRepository this, Guid species_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateAnimalContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateAnimalContent(ContentRepository this, Guid animal_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateAnimalContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateAnimalContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateContentPhotoUrlGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContentPhotoUrl(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateContentTitleGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContentTitle(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateContenttextGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContenttext(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateEnclosureContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateEnclosureContent(ContentRepository this, Guid enclosure_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateEnclosureContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateEnclosureContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateSpeciesContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateSpeciesContent(ContentRepository this, Guid species_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.AllInstances.UpdateSpeciesContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateSpeciesContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid species_id)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimContentRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimContentRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimContentRepository.Bind(BLL.Interfaces.Repositories.IContentRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.Constructor">
+            <summary>Sets the Shim of ContentRepository.ContentRepository(ContentRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.CreateAnimalContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateAnimalContent(ContentRepository this, Content content, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.CreateContentContent">
+            <summary>Sets the Shim of ContentRepository.CreateContent(ContentRepository this, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.CreateEnclosureContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateEnclosureContent(ContentRepository this, Content content, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.CreateSpeciesContentContentGuid">
+            <summary>Sets the Shim of ContentRepository.CreateSpeciesContent(ContentRepository this, Content content, Guid species_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.DeleteContentGuid">
+            <summary>Sets the Shim of ContentRepository.DeleteContent(ContentRepository this, Guid content_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.EdditContentOrderGuidWebContentOrder">
+            <summary>Sets the Shim of ContentRepository.EdditContentOrder(ContentRepository this, Guid contentId, WebContentOrder wCO)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.GetAnimalContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetAnimalContents(ContentRepository this, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.GetEnclosureContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetEnclosureContents(ContentRepository this, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.GetSpeciesContentsGuid">
+            <summary>Sets the Shim of ContentRepository.GetSpeciesContents(ContentRepository this, Guid species_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateAnimalContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateAnimalContent(ContentRepository this, Guid animal_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateAnimalContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateAnimalContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateContentPhotoUrlGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContentPhotoUrl(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateContentTitleGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContentTitle(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateContenttextGuidString">
+            <summary>Sets the Shim of ContentRepository.UpdateContenttext(ContentRepository this, Guid content_Id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateEnclosureContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateEnclosureContent(ContentRepository this, Guid enclosure_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateEnclosureContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateEnclosureContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateSpeciesContentGuidContent">
+            <summary>Sets the Shim of ContentRepository.UpdateSpeciesContent(ContentRepository this, Guid species_id, Content content)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimContentRepository.UpdateSpeciesContentWebContentOrderStringStringStringGuid">
+            <summary>Sets the Shim of ContentRepository.UpdateSpeciesContent(ContentRepository this, WebContentOrder order, String title, String contentText, String photoUrl, Guid species_id)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimEmployeeRepository">
+            <summary>Shim type of DAL.Repositories.EmployeeRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEmployeeRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEmployeeRepository.#ctor(DAL.Repositories.EmployeeRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.AuthenticateLoginStringString">
+            <summary>Sets the Shim of EmployeeRepository.AuthenticateLogin(EmployeeRepository this, String email, String password)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.CreateEmployee">
+            <summary>Sets the Shim of EmployeeRepository.Create(EmployeeRepository this, Employee employee)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditAdressGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditAdress(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditBirthDateGuidDateTime">
+            <summary>Sets the Shim of EmployeeRepository.EdditBirthDate(EmployeeRepository this, Guid id, DateTime date)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditEmployeeBankAccountGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditEmployeeBankAccount(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditGenderGuidGender">
+            <summary>Sets the Shim of EmployeeRepository.EdditGender(EmployeeRepository this, Guid id, Gender gender)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditHourlyRateGuidDecimal">
+            <summary>Sets the Shim of EmployeeRepository.EdditHourlyRate(EmployeeRepository this, Guid id, Decimal value)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditLastnameGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditLastname(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditPhotoUrlGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditPhotoUrl(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditSSnGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditSSn(EmployeeRepository this, Guid id, String sSN)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EdditWorkEmailGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditWorkEmail(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EditEmailGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditEmail(EmployeeRepository this, Guid id, String new_personal_email)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EditFnameGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditFname(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EditPasswordGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditPassword(EmployeeRepository this, Guid id, String password)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.EditRoleGuidRole">
+            <summary>Sets the Shim of EmployeeRepository.EditRole(EmployeeRepository this, Guid id, Role role)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetAllEmployees">
+            <summary>Sets the Shim of EmployeeRepository.GetAllEmployees(EmployeeRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetEmployeeByIdGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeById(EmployeeRepository this, Guid idToFind)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetEmployeeByWorkEmailString">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeByWorkEmail(EmployeeRepository this, String emailToFind)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetEmployeeIDGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeID(EmployeeRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetEmployeeWorkMailString">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeWorkMail(EmployeeRepository this, String company_email)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.GetEmployeesFromTaskGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeesFromTask(EmployeeRepository this, Guid task_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.RemoveEmployeeGuid">
+            <summary>Sets the Shim of EmployeeRepository.RemoveEmployee(EmployeeRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AllInstances.UpdateEmployeeEmployee">
+            <summary>Sets the Shim of EmployeeRepository.UpdateEmployee(EmployeeRepository this, Employee employee)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.AuthenticateLoginStringString">
+            <summary>Sets the Shim of EmployeeRepository.AuthenticateLogin(EmployeeRepository this, String email, String password)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEmployeeRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEmployeeRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEmployeeRepository.Bind(BLL.Interfaces.Repositories.IEmployeeRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.Constructor">
+            <summary>Sets the Shim of EmployeeRepository.EmployeeRepository(EmployeeRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.CreateEmployee">
+            <summary>Sets the Shim of EmployeeRepository.Create(EmployeeRepository this, Employee employee)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditAdressGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditAdress(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditBirthDateGuidDateTime">
+            <summary>Sets the Shim of EmployeeRepository.EdditBirthDate(EmployeeRepository this, Guid id, DateTime date)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditEmployeeBankAccountGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditEmployeeBankAccount(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditGenderGuidGender">
+            <summary>Sets the Shim of EmployeeRepository.EdditGender(EmployeeRepository this, Guid id, Gender gender)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditHourlyRateGuidDecimal">
+            <summary>Sets the Shim of EmployeeRepository.EdditHourlyRate(EmployeeRepository this, Guid id, Decimal value)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditLastnameGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditLastname(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditPhotoUrlGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditPhotoUrl(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditSSnGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditSSn(EmployeeRepository this, Guid id, String sSN)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EdditWorkEmailGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EdditWorkEmail(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EditEmailGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditEmail(EmployeeRepository this, Guid id, String new_personal_email)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EditFnameGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditFname(EmployeeRepository this, Guid id, String text)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EditPasswordGuidString">
+            <summary>Sets the Shim of EmployeeRepository.EditPassword(EmployeeRepository this, Guid id, String password)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.EditRoleGuidRole">
+            <summary>Sets the Shim of EmployeeRepository.EditRole(EmployeeRepository this, Guid id, Role role)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetAllEmployees">
+            <summary>Sets the Shim of EmployeeRepository.GetAllEmployees(EmployeeRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetEmployeeByIdGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeById(EmployeeRepository this, Guid idToFind)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetEmployeeByWorkEmailString">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeByWorkEmail(EmployeeRepository this, String emailToFind)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetEmployeeIDGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeID(EmployeeRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetEmployeeWorkMailString">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeeWorkMail(EmployeeRepository this, String company_email)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.GetEmployeesFromTaskGuid">
+            <summary>Sets the Shim of EmployeeRepository.GetEmployeesFromTask(EmployeeRepository this, Guid task_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.RemoveEmployeeGuid">
+            <summary>Sets the Shim of EmployeeRepository.RemoveEmployee(EmployeeRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEmployeeRepository.UpdateEmployeeEmployee">
+            <summary>Sets the Shim of EmployeeRepository.UpdateEmployee(EmployeeRepository this, Employee employee)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimEnclosureRepository">
+            <summary>Shim type of DAL.Repositories.EnclosureRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEnclosureRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEnclosureRepository.#ctor(DAL.Repositories.EnclosureRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.CreateEnclosureEnclosure">
+            <summary>Sets the Shim of EnclosureRepository.CreateEnclosure(EnclosureRepository this, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.DeleteEnclosureGuid">
+            <summary>Sets the Shim of EnclosureRepository.DeleteEnclosure(EnclosureRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.EditEnclosureEnclosure">
+            <summary>Sets the Shim of EnclosureRepository.EditEnclosure(EnclosureRepository this, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.EditShowOnWebEnclosureBoolean">
+            <summary>Sets the Shim of EnclosureRepository.EditShowOnWeb(EnclosureRepository this, Enclosure enclosure, Boolean showOnWeb)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.GetEnclosureGuid">
+            <summary>Sets the Shim of EnclosureRepository.GetEnclosure(EnclosureRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.AllInstances.GetEnclosures">
+            <summary>Sets the Shim of EnclosureRepository.GetEnclosures(EnclosureRepository this)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEnclosureRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEnclosureRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimEnclosureRepository.Bind(BLL.Interfaces.Repositories.IEnclosureRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.Constructor">
+            <summary>Sets the Shim of EnclosureRepository.EnclosureRepository(EnclosureRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.CreateEnclosureEnclosure">
+            <summary>Sets the Shim of EnclosureRepository.CreateEnclosure(EnclosureRepository this, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.DeleteEnclosureGuid">
+            <summary>Sets the Shim of EnclosureRepository.DeleteEnclosure(EnclosureRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.EditEnclosureEnclosure">
+            <summary>Sets the Shim of EnclosureRepository.EditEnclosure(EnclosureRepository this, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.EditShowOnWebEnclosureBoolean">
+            <summary>Sets the Shim of EnclosureRepository.EditShowOnWeb(EnclosureRepository this, Enclosure enclosure, Boolean showOnWeb)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.GetEnclosureGuid">
+            <summary>Sets the Shim of EnclosureRepository.GetEnclosure(EnclosureRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimEnclosureRepository.GetEnclosures">
+            <summary>Sets the Shim of EnclosureRepository.GetEnclosures(EnclosureRepository this)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimNoteRepository">
+            <summary>Shim type of DAL.Repositories.NoteRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimNoteRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimNoteRepository.#ctor(DAL.Repositories.NoteRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.ArchiveNoteGuid">
+            <summary>Sets the Shim of NoteRepository.ArchiveNote(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.CreateNote">
+            <summary>Sets the Shim of NoteRepository.Create(NoteRepository this, Note note)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.CreateNoteNote">
+            <summary>Sets the Shim of NoteRepository.CreateNote(NoteRepository this, Note note)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.DeleteGuid">
+            <summary>Sets the Shim of NoteRepository.Delete(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.EditGuidListOfAnimal">
+            <summary>Sets the Shim of NoteRepository.Edit(NoteRepository this, Guid id, List`1 animals)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.EditGuidString">
+            <summary>Sets the Shim of NoteRepository.Edit(NoteRepository this, Guid id, String newDescription)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.GetAllNotes">
+            <summary>Sets the Shim of NoteRepository.GetAllNotes(NoteRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.GetEmployeeNotesGuid">
+            <summary>Sets the Shim of NoteRepository.GetEmployeeNotes(NoteRepository this, Guid employee_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.AllInstances.GetNoteGuid">
+            <summary>Sets the Shim of NoteRepository.GetNote(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.ArchiveNoteGuid">
+            <summary>Sets the Shim of NoteRepository.ArchiveNote(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimNoteRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimNoteRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimNoteRepository.Bind(BLL.Interfaces.Repositories.INoteRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.Constructor">
+            <summary>Sets the Shim of NoteRepository.NoteRepository(NoteRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.CreateNote">
+            <summary>Sets the Shim of NoteRepository.Create(NoteRepository this, Note note)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.CreateNoteNote">
+            <summary>Sets the Shim of NoteRepository.CreateNote(NoteRepository this, Note note)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.DeleteGuid">
+            <summary>Sets the Shim of NoteRepository.Delete(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.EditGuidListOfAnimal">
+            <summary>Sets the Shim of NoteRepository.Edit(NoteRepository this, Guid id, List`1 animals)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.EditGuidString">
+            <summary>Sets the Shim of NoteRepository.Edit(NoteRepository this, Guid id, String newDescription)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.GetAllNotes">
+            <summary>Sets the Shim of NoteRepository.GetAllNotes(NoteRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.GetEmployeeNotesGuid">
+            <summary>Sets the Shim of NoteRepository.GetEmployeeNotes(NoteRepository this, Guid employee_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimNoteRepository.GetNoteGuid">
+            <summary>Sets the Shim of NoteRepository.GetNote(NoteRepository this, Guid id)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimSpeciesRepository">
+            <summary>Shim type of DAL.Repositories.SpeciesRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimSpeciesRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimSpeciesRepository.#ctor(DAL.Repositories.SpeciesRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.CreateSpeciesSpecies">
+            <summary>Sets the Shim of SpeciesRepository.CreateSpecies(SpeciesRepository this, Species species)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.DeleteSpeciesGuid">
+            <summary>Sets the Shim of SpeciesRepository.DeleteSpecies(SpeciesRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditShowStatusGuidBoolean">
+            <summary>Sets the Shim of SpeciesRepository.EdditShowStatus(SpeciesRepository this, Guid id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesEnclosureGuidEnclosure">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesEnclosure(SpeciesRepository this, Guid id, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesIncubationTimeGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesIncubationTime(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesLifeSpanGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesLifeSpan(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesShowStatusGuidBoolean">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesShowStatus(SpeciesRepository this, Guid id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesSizeGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesSize(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesSpeedGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesSpeed(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EdditSpeciesWeightGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesWeight(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EditEnclosureGuidEnclosure">
+            <summary>Sets the Shim of SpeciesRepository.EditEnclosure(SpeciesRepository this, Guid id, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EditEndangeredGuidEndangered">
+            <summary>Sets the Shim of SpeciesRepository.EditEndangered(SpeciesRepository this, Guid id, Endangered endangered)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EditSpeciesMaxAgeGuidString">
+            <summary>Sets the Shim of SpeciesRepository.EditSpeciesMaxAge(SpeciesRepository this, Guid id, String MaxAge)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EditSpeciesNameGuidString">
+            <summary>Sets the Shim of SpeciesRepository.EditSpeciesName(SpeciesRepository this, Guid id, String SpeciesName)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.EditSpeciesSpeciesGuid">
+            <summary>Sets the Shim of SpeciesRepository.EditSpecies(SpeciesRepository this, Species species, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetAllSpeciesNames">
+            <summary>Sets the Shim of SpeciesRepository.GetAllSpeciesNames(SpeciesRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetSpecies">
+            <summary>Sets the Shim of SpeciesRepository.GetSpecies(SpeciesRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetSpeciesByAnimalidGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesByAnimalid(SpeciesRepository this, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetSpeciesByIntGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesByInt(SpeciesRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetSpeciesFromEnclosureGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesFromEnclosure(SpeciesRepository this, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.AllInstances.GetSpeciesFromTaskGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesFromTask(SpeciesRepository this, Guid task_id)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimSpeciesRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimSpeciesRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimSpeciesRepository.Bind(BLL.Interfaces.Repositories.ISpeciesRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.Constructor">
+            <summary>Sets the Shim of SpeciesRepository.SpeciesRepository(SpeciesRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.CreateSpeciesSpecies">
+            <summary>Sets the Shim of SpeciesRepository.CreateSpecies(SpeciesRepository this, Species species)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.DeleteSpeciesGuid">
+            <summary>Sets the Shim of SpeciesRepository.DeleteSpecies(SpeciesRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditShowStatusGuidBoolean">
+            <summary>Sets the Shim of SpeciesRepository.EdditShowStatus(SpeciesRepository this, Guid id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesEnclosureGuidEnclosure">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesEnclosure(SpeciesRepository this, Guid id, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesIncubationTimeGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesIncubationTime(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesLifeSpanGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesLifeSpan(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesShowStatusGuidBoolean">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesShowStatus(SpeciesRepository this, Guid id, Boolean v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesSizeGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesSize(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesSpeedGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesSpeed(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EdditSpeciesWeightGuidInt32">
+            <summary>Sets the Shim of SpeciesRepository.EdditSpeciesWeight(SpeciesRepository this, Guid id, Int32 v)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EditEnclosureGuidEnclosure">
+            <summary>Sets the Shim of SpeciesRepository.EditEnclosure(SpeciesRepository this, Guid id, Enclosure enclosure)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EditEndangeredGuidEndangered">
+            <summary>Sets the Shim of SpeciesRepository.EditEndangered(SpeciesRepository this, Guid id, Endangered endangered)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EditSpeciesMaxAgeGuidString">
+            <summary>Sets the Shim of SpeciesRepository.EditSpeciesMaxAge(SpeciesRepository this, Guid id, String MaxAge)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EditSpeciesNameGuidString">
+            <summary>Sets the Shim of SpeciesRepository.EditSpeciesName(SpeciesRepository this, Guid id, String SpeciesName)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.EditSpeciesSpeciesGuid">
+            <summary>Sets the Shim of SpeciesRepository.EditSpecies(SpeciesRepository this, Species species, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetAllSpeciesNames">
+            <summary>Sets the Shim of SpeciesRepository.GetAllSpeciesNames(SpeciesRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetSpecies">
+            <summary>Sets the Shim of SpeciesRepository.GetSpecies(SpeciesRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetSpeciesByAnimalidGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesByAnimalid(SpeciesRepository this, Guid animal_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetSpeciesByIntGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesByInt(SpeciesRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetSpeciesFromEnclosureGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesFromEnclosure(SpeciesRepository this, Guid enclosure_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimSpeciesRepository.GetSpeciesFromTaskGuid">
+            <summary>Sets the Shim of SpeciesRepository.GetSpeciesFromTask(SpeciesRepository this, Guid task_id)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimTaskRepository">
+            <summary>Shim type of DAL.Repositories.TaskRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimTaskRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimTaskRepository.#ctor(DAL.Repositories.TaskRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.CreateTask">
+            <summary>Sets the Shim of TaskRepository.Create(TaskRepository this, Task task)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.CreateTaskOptionGuidStringString">
+            <summary>Sets the Shim of TaskRepository.CreateTaskOption(TaskRepository this, Guid id, String title, String description)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.DeleteGuid">
+            <summary>Sets the Shim of TaskRepository.Delete(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.DeleteTaskOptionGuid">
+            <summary>Sets the Shim of TaskRepository.DeleteTaskOption(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.EditGuidInt32">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, Int32 shift_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.EditGuidListOfEmployee">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, List`1 employees)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.EditGuidListOfSpecies">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, List`1 species)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.EditGuidString">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, String new_description)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.GetAllTasks">
+            <summary>Sets the Shim of TaskRepository.GetAllTasks(TaskRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.GetEmployeeTasksGuid">
+            <summary>Sets the Shim of TaskRepository.GetEmployeeTasks(TaskRepository this, Guid employee_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.GetTaskAnimalsGuid">
+            <summary>Sets the Shim of TaskRepository.GetTaskAnimals(TaskRepository this, Guid taskid)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.GetTaskGuid">
+            <summary>Sets the Shim of TaskRepository.GetTask(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.GetTaskOptions">
+            <summary>Sets the Shim of TaskRepository.GetTaskOptions(TaskRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.AllInstances.UpdateTaskOptionGuidStringString">
+            <summary>Sets the Shim of TaskRepository.UpdateTaskOption(TaskRepository this, Guid id, String title, String description)</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimTaskRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimTaskRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.ShimTaskRepository.Bind(BLL.Interfaces.Repositories.ITaskRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.Constructor">
+            <summary>Sets the Shim of TaskRepository.TaskRepository(TaskRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.CreateTask">
+            <summary>Sets the Shim of TaskRepository.Create(TaskRepository this, Task task)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.CreateTaskOptionGuidStringString">
+            <summary>Sets the Shim of TaskRepository.CreateTaskOption(TaskRepository this, Guid id, String title, String description)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.DeleteGuid">
+            <summary>Sets the Shim of TaskRepository.Delete(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.DeleteTaskOptionGuid">
+            <summary>Sets the Shim of TaskRepository.DeleteTaskOption(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.EditGuidInt32">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, Int32 shift_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.EditGuidListOfEmployee">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, List`1 employees)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.EditGuidListOfSpecies">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, List`1 species)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.EditGuidString">
+            <summary>Sets the Shim of TaskRepository.Edit(TaskRepository this, Guid id, String new_description)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.GetAllTasks">
+            <summary>Sets the Shim of TaskRepository.GetAllTasks(TaskRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.GetEmployeeTasksGuid">
+            <summary>Sets the Shim of TaskRepository.GetEmployeeTasks(TaskRepository this, Guid employee_id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.GetTaskAnimalsGuid">
+            <summary>Sets the Shim of TaskRepository.GetTaskAnimals(TaskRepository this, Guid taskid)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.GetTaskGuid">
+            <summary>Sets the Shim of TaskRepository.GetTask(TaskRepository this, Guid id)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.GetTaskOptions">
+            <summary>Sets the Shim of TaskRepository.GetTaskOptions(TaskRepository this)</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.ShimTaskRepository.UpdateTaskOptionGuidStringString">
+            <summary>Sets the Shim of TaskRepository.UpdateTaskOption(TaskRepository this, Guid id, String title, String description)</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubAnimalRepository">
+            <summary>Stub type of DAL.Repositories.AnimalRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubAnimalRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubAnimalRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubAnimalRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubAnimalRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubAnimalRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubAnimalRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubContentRepository">
+            <summary>Stub type of DAL.Repositories.ContentRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubContentRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubContentRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubContentRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubContentRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubContentRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubContentRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubEmployeeRepository">
+            <summary>Stub type of DAL.Repositories.EmployeeRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubEmployeeRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEmployeeRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubEmployeeRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubEmployeeRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEmployeeRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEmployeeRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubEnclosureRepository">
+            <summary>Stub type of DAL.Repositories.EnclosureRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubEnclosureRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEnclosureRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubEnclosureRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubEnclosureRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEnclosureRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubEnclosureRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubNoteRepository">
+            <summary>Stub type of DAL.Repositories.NoteRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubNoteRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubNoteRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubNoteRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubNoteRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubNoteRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubNoteRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubSpeciesRepository">
+            <summary>Stub type of DAL.Repositories.SpeciesRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubSpeciesRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubSpeciesRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubSpeciesRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubSpeciesRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubSpeciesRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubSpeciesRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DAL.Repositories.Fakes.StubTaskRepository">
+            <summary>Stub type of DAL.Repositories.TaskRepository</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubTaskRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubTaskRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DAL.Repositories.Fakes.StubTaskRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubTaskRepository</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubTaskRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DAL.Repositories.Fakes.StubTaskRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

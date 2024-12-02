@@ -1,0 +1,91 @@
+﻿@page
+@model WebApp.Pages.EnclosuresModel
+@{
+    string imageUrl = "/media/pfp/default-pfp.png";
+}
+
+<main class="container1">
+    <section class="media-window">
+        <h1>Enter the @Model.Enclosure.Name</h1>
+        <img class="header-enclosure" src="~/media/@Model.Enclosure.Name-logo.png" />
+        <video id="header-video" muted="muted" autoplay="autoplay" loop="loop" playsinline poster="~/media/forestHeaderImage.png">
+            <source src="~/media/bannervideo/@Model.Enclosure.Name-bannervideo.mp4" type="video/mp4" />
+        </video>
+    </section>
+    <section class="content-window">
+        <div class="content-items">
+            <div class="web-path">
+                <a class="h5-a" href="/">Homepage</a>
+            </div>
+            @if (Model.EnclosureContent.Count > 0)
+            {
+                @for (int i = 0; i < Model.EnclosureContent.Count; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        <section class="content-section">
+                            <div class="content-section-text1">
+                                <h3 class="green-color">@Model.EnclosureContent[i].Title</h3>
+                                <p>@Model.EnclosureContent[i].Text</p>
+                            </div>
+                            <div class="content-section-image">
+                                @if (Model.EnclosureContent[i].ImageUrl == "empty")
+                                {
+                                    <img src="~/media/contentfolder/defaultcontentimage.png" />
+                                }
+                                else
+                                {
+                                    <img src="@Model.EnclosureContent[i].ImageUrl" />
+                                }
+                            </div>
+                        </section>
+                    }
+                    else
+                    {
+                        <section class="content-section">
+                            <div class="content-section-image">
+                                @if (Model.EnclosureContent[i].ImageUrl == "empty")
+                                {
+                                    <img src="~/media/contentfolder/defaultcontentimage.png" />
+                                }
+                                else
+                                {
+                                    <img src="@Model.EnclosureContent[i].ImageUrl" />
+                                }
+                            </div>
+                            <div class="content-section-text1">
+                                <h3 class="green-color">@Model.EnclosureContent[i].Title</h3>
+                                <p>@Model.EnclosureContent[i].Text</p>
+                            </div>
+                        </section>
+                    }
+                }
+            }
+            <section class="content-section" id="enclosure-list">
+                <div class="carousel-intro">
+                    <h3 class="green-color">Discover the animals in this enclosure!</h3>
+                    <p>Swing along the vines and find out what animals you can stumble across in our Jungle!</p>
+                </div>
+                <div class="carousel">
+                    @if(Model.Species != null)
+                    {
+                        @foreach (var species in Model.Species)
+                        {
+                            <div class="carousel-cell">
+                                <h3>@species.SpeciesName</h3>
+                                @if (Model.ContentList.FirstOrDefault(x => x.Key == species.SpeciesId).Value != "empty")
+                                {
+                                    imageUrl = Model.ContentList.FirstOrDefault(x => x.Key == species.SpeciesId).Value;
+                                }
+
+                                <a href="@species.Url">
+                                    <img src="@Url.Content(imageUrl)" />
+                                </a>
+                            </div>
+                        }
+                    }
+                </div>
+            </section>
+        </div>
+    </section>
+</main>

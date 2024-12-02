@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site-emp.css" asp-append-version="true" />
+</head>
+<body class="ver-body blue-bg-light">
+    <div class="ver-header blue-bg">
+        <a href="/"><img src="~/media/zoo-bazaar.png" /></a>
+        <nav class="ver-nav">
+            <a href="/EmployeeDashboardProfile">Profile</a>
+            <a href="/EmployeeDashboardSchedule">Schedule</a>
+            <a href="/EmployeeDashboardNotes">Animal notes</a>
+            <a href="/Index">Back</a>
+            <a href="/Logout">Log out</a>
+        </nav>
+    </div>
+    @RenderBody()
+    <script src="~/js/site-emp.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

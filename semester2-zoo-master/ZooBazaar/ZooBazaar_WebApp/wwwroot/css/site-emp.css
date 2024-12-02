@@ -1,0 +1,281 @@
+*, p{
+    padding: 0;
+    margin: 0;
+    font-family: regular;
+    font-kerning: none;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+@font-face {
+    font-family: black;
+    src: url(../fonts/whitney-blacksc.otf);
+}
+@font-face {
+    font-family: regular;
+    src: url(../fonts/whitney-book.otf);
+}
+
+/*Colors*/
+.red-bg {
+    background-color: #c51f1a;
+}
+.red-bg-light {
+    background-color: #f7e9e9;
+}
+.red-color {
+    color: #c51f1a;
+}
+
+.orange-bg {
+    background-color: #e96520;
+}
+.orange-bg-light {
+    background-color: #f7eee9;
+}
+.orange-color {
+    color: #e96520;
+}
+
+.yellow-bg {
+    background-color: #f8b112;
+}
+.yellow-bg-light {
+    background-color: #f7f2e4;
+}
+.yellow-color {
+    color: #f8b112;
+}
+
+.green-bg {
+    background-color: #218736;
+}
+.green-bg-light {
+    background-color: #e6f5e9;
+}
+.green-color {
+    color: #269C35;
+}
+
+.blue-bg {
+    background-color: #365c88;
+}
+.blue-bg-light {
+    background-color: #e9eff7;
+}
+.blue-color {
+    color: #365c88;
+}
+
+/*Ankor tag black coloring*/
+a {
+    font-size: 25px;
+    font-family: black;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+
+/*Fonts*/
+h1, h2, h3, h4, h5{
+    font-family: black;
+}
+
+/*Flex directions*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Vertical Header*/
+.ver-body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.ver-header {
+    flex: 0 0 250px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.ver-header img{
+    width: 100%;
+}
+.ver-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.ver-nav a{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.ver-nav a:last-child {
+    margin-top: auto;
+}
+.ver-nav ul li:hover{
+
+}
+
+/*Dashboard content*/
+.container1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-frame{
+    height: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.banner{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pfp-frame{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.pfp {
+    height: 100%;
+}
+
+.content{
+    flex: 1;
+    padding: 50px;
+    height: 100%;
+}
+
+.form-controls-extra{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.profile-forms {
+    flex: 0 0 calc(50% - 50px);
+}
+
+.profile-forms:not(:nth-child(2n)){
+    margin-right: 50px;
+}
+.form-btn-extra{
+    height: 100%;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: auto;
+}
+
+/*Notes Page*/
+.form-controls-extra-notes{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.form-btn-extra-notes{
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.note-history{
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    margin-left: 50px;
+}
+
+.note-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 1em;
+    display: block;
+    border-radius: 0.5em;
+    border: 1px solid #C1C1C1;
+}
+
+/*Schedule page*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+.panel {
+    padding: 0 15px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.side-bar{
+    padding: 2em;
+}
+
+.reg-font{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.table{
+    overflow: scroll;
+    width: auto;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    margin-top: 70px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 1em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

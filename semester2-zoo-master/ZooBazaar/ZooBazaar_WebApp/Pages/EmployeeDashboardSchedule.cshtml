@@ -1,0 +1,139 @@
+﻿@page
+@model WebApp.Pages.EmployeeDashboardScheduleModel
+@{
+    Layout = "~/pages/shared/_layoutdashboard.cshtml";
+
+    int currentYear;
+    int currentMonth;
+
+    if (TempData["Month"] != null)
+        currentMonth = (int)TempData["Month"];
+    else
+        currentMonth = DateTime.Now.Month;
+
+    if (TempData["Year"] != null)
+        currentYear = (int)TempData["Year"];
+    else
+        currentYear = DateTime.Now.Year;
+
+    int daysInMonth = DateTime.DaysInMonth(currentYear, currentMonth);
+    DateTime firstDayOfMonth = new DateTime(currentYear, currentMonth, 1);
+    int startingDayOffset = (int)firstDayOfMonth.DayOfWeek;
+}
+
+<div class="table">
+    <table style="border: 1px solid black;">
+        <tr style="height: 50px; text-align:center;">
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            @for (int day = 1; day <= daysInMonth + startingDayOffset; day++)
+            {
+            if (day > startingDayOffset)
+            {
+            int currentDay = day - startingDayOffset;
+            DateOnly currentDate = new DateOnly(currentYear, currentMonth, currentDay);
+
+            <td style="width: 170px; height: 170px; border-top: 1px solid black;">
+                <a style="width:inherit; height: inherit; display:flex; flex-direction: column; align-items:center; justify-content: flex-start; text-decoration: none;" asp-page-handler="ShowTasks" asp-route-day="@currentDay" asp-route-month="@currentMonth" asp-route-year="@currentYear" class="btn-link">
+                    <strong>@currentDay</strong>
+                    <div style="display: flex; flex-direction: column; overflow: auto; width: inherit; align-items: center">
+                        @foreach (var task in Model.EmployeeTasks)
+                        {
+                        <div>
+                            @if (task.Date == currentDate)
+                            {
+                            var ts = task.GetTimeSlot();
+
+                            <span style="font-weight: bold;">@task.Title</span>
+                            <br />
+
+                            <span>@ts.StartTime - @ts.EndTime</span>
+                            }
+                        </div>
+                        }
+                    </div>
+                </a>
+            </td>
+            }
+            else
+            {
+            <td></td>
+            }
+            if ((day) % 7 == 0)
+            {
+        <tr></tr>
+        }
+
+        }
+        </tr>
+
+    </table>
+</div>
+
+<div class="d-flex flex-column p-2 pb-0">
+    <div class="d-flex">
+        @if (currentMonth > 1)
+        {
+            <form method="post" asp-page-handler="DifferentMonth" asp-route-month="@(currentMonth - 1)" asp-route-year="@currentYear">
+                <button type="submit" class="btn btn-secondary">Previous month</button>
+            </form>
+        }
+        else
+        {
+            <form method="post" asp-page-handler="DifferentMonth" asp-route-month="12" asp-route-year="@(currentYear - 1)">
+                <button type="submit" class="btn btn-secondary">Previous month</button>
+            </form>
+        }
+
+        <p class="pe-2 ps-2 reg-font">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(currentMonth)</p>
+
+        @if (currentMonth < 12)
+        {
+            <form method="post" asp-page-handler="DifferentMonth" asp-route-month="@(currentMonth + 1)" asp-route-year="@currentYear">
+                <button type="submit" class="btn btn-primary">Next month</button>
+            </form>
+        }
+        else
+        {
+            <form method="post" asp-page-handler="DifferentMonth" asp-route-month="1" asp-route-year="@(currentYear + 1)">
+                <button type="submit" class="btn btn-primary">Next month</button>
+            </form>
+        }
+    </div>
+        
+
+    @if (ViewData["SelectedTasks"] != null)
+    {
+        <p class="reg-font">Tasks for Selected Date:</p>
+        @foreach (var task in ViewData["SelectedTasks"] as List<WebApp.DTO.TaskDTO>)
+        {
+            var ts = task.GetTimeSlot();
+
+            <button class="accordion">@task.Title- @ts.StartTime - @ts.EndTime</button>
+            <div class="panel">
+                <p>@task.Description</p>
+
+                <ul>
+                    @foreach (var species in task.Species)
+                    {
+                        @if (species is BLL.Models.Animal animal)
+                        {
+                            <li>@animal.SpeciesName - @animal.AnimalName</li>
+                        }
+                        else
+                        {
+                            <li>@species.SpeciesName</li>
+                        }
+                    }
+                </ul>
+            </div>
+        }
+    }
+</div>

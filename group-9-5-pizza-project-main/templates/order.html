@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/style.css">
+ 
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <div class="container">
+
+        <div class="background">
+            <video autoplay loop muted class="back-video-home">
+                <source src="static/resources/videos.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <nav>
+            <a href="/">
+            <img src="static/resources/logo.png" class="logo" alt="">
+            </a> 
+            <ul>
+                <li><a href="/"class="white-menu">Home</a></li>
+                <li><a href="/order"class="white-menu">Order</a></li>
+                <li><a href="/about"class="white-menu">About us</a></li>
+            </ul>
+        </nav>
+
+        <form action="/register" method="post" class="order-col">
+
+            <h1>Pizzas</h1>
+            <hr>
+
+            <div class="inventory">
+                
+                <div class="pizza-col">
+                    <img class="pizza-img" src="static/resources/pepperoni.jpg" alt="">
+                    <h1>Pepperoni</h1>
+                    <input class="pizza-amount" name='pepperoni_amount' type='number' min='0' max='20' value='0'></input>
+                </div>
+
+                <div class="pizza-col">
+                    <img class="pizza-img" src="static/resources/margherita.jpg" alt="">
+                    <h1>Margherita</h1>
+                    <input class="pizza-amount" name='margherita_amount' type='number' min='0' max='20' value='0'></input>
+                </div>
+
+                <div class="pizza-col">
+                    <img class="pizza-img" src="static/resources/hawaii.jpg" alt="">
+                    <h1>Hawaii</h1>
+                    <input class="pizza-amount" name='hawaii_amount' type='number' min='0' max='20' value='0'></input>
+                </div>
+
+                <div class="pizza-col">
+                    <img class="pizza-img" src="static/resources/cheeselover.png" alt="">
+                    <h1>Cheeselover</h1>
+                    <input class="pizza-amount" name='cheeselover_amount' type='number' min='0' max='20' value='0'></input>
+                </div>
+
+                <div class="pizza-col">
+                    <img class="pizza-img" src="static/resources/meatlover.jpg" alt="">
+                    <h1>Meatlover</h1>
+                    <input class="pizza-amount" name='meatlover_amount' type='number' min='0' max='20' value='0'></input>
+                </div>
+            </div>
+                <div class='center' style="z-index: 9999; color:#FFF;">Total : <span id="total" style="color:#FFF;">0</span>€</div>
+                <input class="order-button" type="submit" value="PLACE ORDER"></input>
+        </form>
+
+    </div>
+    
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>
+

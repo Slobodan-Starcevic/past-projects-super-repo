@@ -1,0 +1,2 @@
+ALTER TABLE version DROP CONSTRAINT IF EXISTS uk_d47fkryv3wgsctapwvawn21qr;
+ALTER TABLE version DROP CONSTRAINT IF EXISTS uk_proox2160kmali0nn86xijloo

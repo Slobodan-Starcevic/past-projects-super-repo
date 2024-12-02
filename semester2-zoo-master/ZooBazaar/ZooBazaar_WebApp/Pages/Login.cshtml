@@ -1,0 +1,34 @@
+﻿@page
+@model WebApp.Pages.LoginModel
+@{
+}
+
+<div class="container1">
+    <div class="content-section-text1">
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                <h5>@TempData["ErrorMessage"]</h5>
+            </div>
+        }
+        <div class="submit-form login-thing">
+            <form method="post">
+                <div class="form-controls">
+                    <label asp-for="UserLogin.Username" class="form-label">Email</label>
+                    <span class="text-danger" asp-validation-for="UserLogin.Username"></span>
+                    <input asp-for="UserLogin.Username" class="form-control" />
+                    <label asp-for="UserLogin.Password" class="form-label"></label>
+                    <span class="text-danger" asp-validation-for="UserLogin.Password"></span>
+                    <input type="password" asp-for="UserLogin.Password" class="form-control" />
+                </div>
+                <div class="form-btn">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+@*                <div class="login-or-signup">
+                    <p>New to Postit?</p>
+                    <a href="/signup">Sign up</a>
+                </div>*@
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+﻿@page
+@model WebApp.Pages.AnimalModel
+@{
+    string imageUrl = "/media/pfp/default-pfp.png";
+}
+
+<main class="container1">
+    <section class="media-window">
+        <h1>@Model.Animal.AnimalName the @Model.Animal.SpeciesName</h1>
+        <img class="header-enclosure" src="~/media/@Model.Animal.SpeciesEnclosure.Name-logo.png" />
+        <video id="header-video" muted="muted" autoplay="autoplay" loop="loop" playsinline poster="~/media/jaguar-bannerimage.png">
+            <source src="~/media/bannervideo/@Model.Animal.SpeciesEnclosure.Name-bannervideo.mp4" type="video/mp4" />
+        </video>
+    </section>
+    <section class="content-window">
+        <div class="content-items">
+            <div class="web-path">
+                <a class="h5-a" href="/">Homepage</a>
+                <h5 class="path-separator"> > </h5>
+                <a class="h5-a" href="@Model.Animal.SpeciesEnclosure.Url">@Model.Animal.SpeciesEnclosure.Name</a>
+                <h5 class="path-separator"> > </h5>
+                <a class="h5-a" href="/species?id=@Model.Animal.SpeciesId"">@Model.Animal.SpeciesName</a>
+            </div>
+            @if (Model.AnimalContent.Count > 0)
+            {
+                <section class="content-section">
+                    <div class="content-section-text2">
+                        @if (Model.AnimalContent[0].ImageUrl == "empty")
+                        {
+                            <img src="~/media/contentfolder/defaultcontentimage.png" />
+                        }
+                        else
+                        {
+                            <img src="@Model.AnimalContent[0].ImageUrl" />
+                        }
+                        <h3 class="green-color">@Model.AnimalContent[0].Title</h3>
+                        <p>@Model.AnimalContent[0].Text</p>
+                    </div>
+                </section>
+            }
+            @if (Model.AnimalContent.Count > 1)
+            {
+                @for (int i = 1; i <= Model.AnimalContent.Count - 1; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        <section class="content-section">
+                            <div class="content-section-text1">
+                                <h3 class="green-color">@Model.AnimalContent[i].Title</h3>
+                                <p>@Model.AnimalContent[i].Text</p>
+                            </div>
+                            <div class="content-section-image">
+                                @if (Model.AnimalContent[i].ImageUrl == "empty")
+                                {
+                                    <img src="~/media/contentfolder/defaultcontentimage.png" />
+                                }
+                                else
+                                {
+                                    <img src="@Model.AnimalContent[i].ImageUrl" />
+                                }
+                            </div>
+                        </section>
+                    }
+                    else
+                    {
+                        <section class="content-section">
+                            <div class="content-section-image">
+                                @if (Model.AnimalContent[i].ImageUrl == "empty")
+                                {
+                                    <img src="~/media/contentfolder/defaultcontentimage.png" />
+                                }
+                                else
+                                {
+                                    <img src="@Model.AnimalContent[i].ImageUrl" />
+                                }
+                            </div>
+                            <div class="content-section-text1">
+                                <h3 class="green-color">@Model.AnimalContent[i].Title</h3>
+                                <p>@Model.AnimalContent[i].Text</p>
+                            </div>
+                        </section>
+                    }
+                }
+            }
+            <section class="content-section" id="enclosure-list">
+                <div class="carousel-intro">
+                    <h3 class="green-color">Discover the other animals of this species!</h3>
+                    <p>Dont stop here! There is so much more to see in the @Model.Animal.SpeciesEnclosure.Name!</p>
+                </div>
+                <div class="carousel">
+                    @foreach (var animal in Model.Animals)
+                    {
+                        @if(animal.AnimalId != Model.Animal.AnimalId)
+                        {
+                            <div class="carousel-cell">
+                                <h3>@animal.AnimalName</h3>
+                                @if (Model.ContentList.FirstOrDefault(x => x.Key == animal.AnimalId).Value != "empty")
+                                {
+                                    imageUrl = Model.ContentList.FirstOrDefault(x => x.Key == animal.AnimalId).Value;
+                                }
+
+                                <a href="@animal.Url">
+                                    <img src="@Url.Content(imageUrl)" />
+                                </a>
+                            </div>
+                        }
+                    }
+                </div>
+            </section>
+        </div>
+    </section>
+</main>

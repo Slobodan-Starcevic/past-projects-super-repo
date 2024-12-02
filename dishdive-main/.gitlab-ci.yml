@@ -1,0 +1,44 @@
+image: slobodanstar/gradle8.3.0-jdk17
+
+before_script:
+  - GRADLE_USER_HOME="$(pwd)/.gradle"
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script: gradle --build-cache assemble
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - build
+      - .gradle
+
+test:
+  stage: test
+  script: gradle check
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull-push
+    paths:
+      - build
+      - .gradle
+
+sonar:
+  stage: test
+  script:
+    - gradle sonar -Pcoverage -Dsonar.host.url="http://host.docker.internal:9000" -Dsonar.token=$sonar_token --info
+  cache:
+    key: "$CI_COMMIT_BRANCH"
+    policy: pull
+    paths:
+      - build
+      - .gradle
+  dependencies:
+    - test
+
+

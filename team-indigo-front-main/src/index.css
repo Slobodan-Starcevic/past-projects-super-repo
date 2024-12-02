@@ -1,0 +1,85 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+p:empty{
+    margin:0;
+}
+
+.bg-dark-blue{
+    background-color: #003f75;
+}
+.bg-dark-blue:hover{
+    background-color: #00335f;
+}
+
+.popup-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon{
+    margin-right: 1rem;
+  }
+  
+  .popup-message {
+    display: flex;
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    max-width: 30rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    animation: slide-in-popup 0.5s forwards;
+    user-select: none;
+  }
+  
+  @keyframes slide-in-popup{
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .error{
+    background-color: #CC1B00;
+    border: 1px solid #ffffff;
+    color: #F5F5F5;
+  }
+  .success{
+    background-color: #00CC8B;
+    border: 1px solid #ffffff;
+    color: #F5F5F5;
+  }
+  .default{
+    background-color: #00CC8B;
+    border: 1px solid #6a6a6a;
+    color: #F5F5F5;
+  }
+
+  .key{
+    color: #003f75;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
+.popup-wrapper {
+  z-index: 10000; /* Higher than any other element */
+  /* other styles */
+}

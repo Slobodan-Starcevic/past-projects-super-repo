@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="5">
+    <title>Kitchen</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="background">
+        <video autoplay loop muted class="back-video-home">
+            <source src="/static/resources/videos.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <a href="/">
+        <img src="/static/resources/logo.png" class="logo" alt="">
+        </a>
+        <ul>
+            <li><a href="/"class="white-menu">Home</a></li>
+            <li><a href="/order"class="white-menu">Order</a></li>
+            <li><a href="/about"class="white-menu">About us</a></li>
+        </ul>
+    </nav>
+    <div class="kitchen" >              
+        {% for order in orders %}
+            {% if order.check_status()!='Ready' %}
+                <div class="kitchen-order">
+                    <p>Order:{{ order.id }}</p>
+                    {% for item in order.items %}
+                        <p>{{ item.name }} : {{ item.status }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>

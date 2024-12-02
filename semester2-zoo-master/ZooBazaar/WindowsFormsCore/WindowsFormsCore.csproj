@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FakesAssemblies\**" />
+    <EmbeddedResource Remove="FakesAssemblies\**" />
+    <None Remove="FakesAssemblies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.QualityTools.Testing.Fakes" Version="16.11.230815" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AddAnimalInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddAnimalSpeciesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddEnclosureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AssignEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SpeciesInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SheduleAndTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WindowsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
+  </ItemGroup>
+
+</Project>

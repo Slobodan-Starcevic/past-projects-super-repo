@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    string imageUrl = "/media/pfp/default-pfp.png";
+}
+
+<main class="container1">
+    <section class="media-window">
+        <h1>Enter the wilderness</h1>
+        <a href="/information" class="green-bg">Plan your visit now!</a>
+        <video id="header-video" muted="muted" autoplay="autoplay" loop="loop" playsinline poster="~/media/indexHeaderImage.png">
+            <source src="~/media/indexHeaderVideo.mp4" type="video/mp4"/>
+        </video>
+    </section>
+    <section class="content-window">
+        <div class="content-items">
+            <section class="content-section">
+                <div class="weather-forecast">
+                    <h3>Welcome to Zoo Bazaar!</h3>
+                    <p>We are thrilled to have you explore our website to learn more about our incredible animals and their habitats. Our zoo is home to a vast array of species from around the world, all living in carefully designed environments that mimic their natural habitats. We look forward to welcoming you in person soon!</p>
+                </div>
+                <div class="adventure-redirect green-bg-light">
+                    <p>Are you anxiously waiting for your next visit and can't keep the excitement contained? Then press the button below to start adventuring through a preview of our zoo!</p>
+                    <a href="#enclosure-list">Begin your adventure now!</a>
+                </div>
+            </section>
+            <section class="content-section-news">
+                <div class="news-background blue-bg-light"></div>
+                <h3>What's new at the Zoo Bazaar?</h3>
+                <div class="news-container">
+                    <div class="news-card">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/cute-baby-animals-1558535060.jpg?crop=1.00xw:0.669xh;0,0.158xh&resize=1200:*" />
+                        <a href="/news">Bring your dog day!<br />&#x2192;Read more</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14632/production/_111860538_gettyimages-1129310243.jpg" />
+                        <a href="/news">Jeffrey escaped again<br />&#x2192;Read more</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://www.bu.edu/files/2022/03/feat-iStock-1333294167.jpg" />
+                        <a href="/news">Deers running wild<br />&#x2192;Read more</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2020/05/final_animals-homeschooling_credit-alamy.jpg" />
+                        <a href="/news">Our new rescue!<br />&#x2192;Read more</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://www.dartmoorzoo.org.uk/wp-content/uploads/2021/01/Tiger-1.jpg" />
+                        <a href="/news">He ate all the nutella<br />&#x2192;Read more</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://media.wired.com/photos/593261cab8eb31692072f129/master/w_2560%2Cc_limit/85120553.jpg" />
+                        <a href="/news">New Family!<br />&#x2192;Read more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section" id="enclosure-list">
+                <div class="carousel-intro">
+                    <div class="carousel-background red-bg-light"></div>
+                    <h3>Discover habitats from across the world!</h3>
+                    <p>To make all animals feel nice and cosy we put extra effort into creating evironments that perfectly mimic their home</p>
+                </div>
+                <div class="carousel">
+                    @foreach(var enclosure in Model.AllEnclosures)
+                    {
+                        <div class="carousel-cell">
+                            <h3>@enclosure.Name</h3>
+
+                            @if (Model.ContentList.FirstOrDefault(x => x.Key == enclosure.Id).Value != "empty")
+                            {
+                                imageUrl = Model.ContentList.FirstOrDefault(x => x.Key == enclosure.Id).Value;
+                            }
+
+                            <a href="@enclosure.URL">
+                                <img src="@Url.Content(imageUrl)" />
+                            </a>
+                        </div>
+                    }
+                </div>
+            </section>
+        </div>
+    </section>
+</main>

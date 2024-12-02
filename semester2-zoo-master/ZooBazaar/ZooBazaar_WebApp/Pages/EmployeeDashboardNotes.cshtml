@@ -1,0 +1,44 @@
+﻿@page
+@model WebApp.Pages.EmployeeDashboardNotesModel
+@{
+    Layout = "~/pages/shared/_layoutdashboard.cshtml";
+}
+
+<div class="container1 green-bg-light">
+    <div class="content flex-row">
+        <div class="submit-form">
+            <form method="post">
+                <div class="form-controls form-controls-extra-notes">
+                    <div class="profile-forms-notes">
+                        <label asp-for="Note.SelectedSpeciesId" class="form-label">Select a species (Optional)</label>
+                        <select asp-for="Note.SelectedSpeciesId" asp-items="@(new SelectList(Model.SpeciesList, "SpeciesId", "SpeciesName"))" id="speciesDropdown">
+                            <option value="@Guid.Empty">Select a species</option>
+                        </select>
+                    </div>
+                    <div class="profile-forms-notes">
+                        <label asp-for="Note.NoteText" class="form-label"></label>
+                        <span class="text-danger" asp-validation-for="Note.NoteText"></span>
+                        <textarea asp-for="Note.NoteText" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-btn form-btn-extra-notes">
+                        <button type="submit" class="btn btn-primary">Create Note</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="note-history">
+            @foreach(var note in Model.NoteList)
+            {
+                <div class="note-card">
+                    @if(note.Species != null)
+                    {
+                        <p>Species: @note.Species[0].SpeciesName</p>
+                    }
+                    <p>Text:</p>
+                    <p>@note.Text</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

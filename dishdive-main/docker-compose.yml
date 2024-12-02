@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  dishdive_database:
+    image: postgres:16.1
+    environment:
+      POSTGRES_DB: dishdivedb
+      POSTGRES_USER: slobodan
+      POSTGRES_PASSWORD: slobodan
+    ports:
+      - "5432:5432"
+    networks:
+      - dishdive_network
+    restart: unless-stopped
+
+  dishdive_backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - dishdive_database
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dishdive_database:5432/postgres
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: slobodan
+    networks:
+      - dishdive_network
+    restart: unless-stopped
+
+
+  dishdive_frontend:
+    build:
+      context: ../dishdive-fe
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    networks:
+      - dishdive_network
+    depends_on:
+      - dishdive_backend
+    restart: unless-stopped
+
+
+networks:
+  dishdive_network:
+    driver: bridge
+
+
